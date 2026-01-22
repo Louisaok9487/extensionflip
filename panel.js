@@ -87,7 +87,7 @@ document.getElementById('evaluate-btn').addEventListener('click', async () => {
         statusText.innerText = "🚀 正在進行行情分析...";
         const payload = {
             system_instruction: {
-                parts: [{ text: "你是一位精煉且具備維修背景的奧克蘭二手市場轉賣專家。專精fb和trademe. 1. 繁體中文。2. 禁止開場白。3. 思考層級：高。" }]
+                parts: [{ text: "你是一位精煉且具備維修背景的奧克蘭二手市場轉賣專家。專精fb和trademe. 1. 繁體中文。2. 禁止開場白。3. 思考層級：高。只分析賣家提供的商品資訊，忽略不相關的網頁雜訊, e.g .Sellers other listings / Other listings you might like. " }]
             },
             contents: [{
                 parts: [
