@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<style>
+    body { font-family: 'Segoe UI', sans-serif; padding: 15px; background: #f8f9fa; width: 330px; }
+    h3 { margin-top: 0; color: #2c3e50; border-bottom: 2px solid #007bff; padding-bottom: 8px; }
+    
+    /* 警報區樣式 */
+    #seller-alert { padding: 10px; border-radius: 6px; margin-bottom: 10px; font-size: 0.9em; display: none; }
+    .alert-danger { background: #fff1f1; color: #d32f2f; border: 1px solid #ffcdd2; }
+    .alert-warning { background: #fffde7; color: #f57f17; border: 1px solid #fff9c4; }
+    .alert-success { background: #e8f5e9; color: #2e7d32; border: 1px solid #c8e6c9; }
+
+    /* 圖片預覽區樣式 */
+    #preview-container { display: grid; grid-template-columns: repeat(4, 1fr); gap: 5px; margin-bottom: 10px; }
+    .preview-img { width: 100%; height: 60px; object-fit: cover; border-radius: 4px; border: 1px solid #ddd; }
+
+    .btn { width: 100%; padding: 12px; background: #007bff; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; margin-bottom: 10px; }
+    .btn:disabled { background: #6c757d; }
+    #result { white-space: pre-wrap; background: white; padding: 12px; border: 1px solid #dee2e6; border-radius: 6px; font-size: 0.95em; line-height: 1.5; }
+    #result strong { font-weight: 700; color: #333; }
+    #progress-list { font-size: 0.8em; color: #555; list-style: none; padding: 0; margin-bottom: 10px; }
+    .status-ok { color: green; }
+    .status-fail { color: red; }
+</style>
+</head>
+<body>
+    <h3>💰 NZ Flipping Assistant Pro</h3>
+    
+    <div id="seller-alert"></div>
+    <div id="preview-container"></div>
+    
+    <button id="evaluate-btn" class="btn">Evaluate Item</button>
+    <div id="result">Waiting for evaluation...</div>
+    
+    <script src="panel.js"></script>
+</body>
+</html>
